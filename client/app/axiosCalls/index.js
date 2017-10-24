@@ -1,19 +1,5 @@
 import axios from 'axios'
 
-export function UpVote(userId, commentId) {
-  return axios.post('/upvote', {
-    user_id: userId,
-    comment_id: commentId
-  });
-}
-
-export function DownVote(userId, commentId) {
-  return axios.post('/downvote', {
-    user_id: userId,
-    comment_id: commentId
-  });
-}
-
 export function AddComment(userId, parentId, sessionId, title, text) {
   return axios.post('/comment', {
     user_id: userId,

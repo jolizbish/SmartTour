@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/brainstorm');
+mongoose.connect('mongodb://localhost/smarttour');
 
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));

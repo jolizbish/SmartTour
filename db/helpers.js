@@ -1,8 +1,10 @@
 var mongoose = require('mongoose');
-var User = require('./userSchema');
-var Session = require('./sessionSchema');
-var Comment = require('./commentSchema');
+var Agent = require('./agentSchema');
+var Client = require('./clientSchema');
+var Complex = require('./ComplexSchema');
+var Apartment = require('./apartmentSchema');
 
+// unedited below here
 // search for user
 function findOneUser(req, res) {
   var id = req.query.id;
